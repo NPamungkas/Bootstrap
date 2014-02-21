@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+.span9 {
+  color: black;
+}
+table.data{
+  width:300px;
+  border-radius:10px;
+  border:2px dashed white;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+table.data tr td{
+  background-color: blue;
+}
+a{ color: black; }
+
+#jokes{
+  width: 800px;
+  margin-top: 10px;
+}
+.isi{
+  margin: auto;
+  width: 700px;
+  padding: 10px;
+  background-color: #C0C0C0;
+  border-radius:5px;
+}
+.isi h1{color:#202020 ; text-align: center;}
+.isi span.text{
+  width: 100;
+  color:black;
+  margin: 1px;
+
+}
+.isi:hover{
+  background-color: #C0C0C0;
+}
+.pic{border-radius: 5px;}
+.isi-articel{
+  width: 800px;
+  margin-top: 5px;
+  border:1px dashed #000;
+  padding: 10px;
+  background-color: #00C;
+  border-radius:5px;
+
+}
+
+#error-explanation{
+  color:red;
+}
+#error-explanation ul li{
+  list-style: circle;
+  color: red;
+}
+#error-explanation span.error{
+  font-size: 25px;
+  font-weight: bold;
+}
+span.message{
+  color:red;
+}
+.login-section{
+  border:dashed 1px #000;
+  background-color: #00CCFF;
+}
+span.link{color: white}

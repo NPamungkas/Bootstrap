@@ -1,0 +1,15 @@
+<% if member_signed_in? %>
+
+<div class="logout-section">
+<h3>* You have succesfully </h3>
+<%= link_to "Keluar",  destroy_member_session_path, :method => :delete, :class => 'btn btn-primary' %>
+</div>
+<% else %>
+
+<div class="logout-section">
+<h1> Welcome to Nilokusumo Tri Pamungkas</h1>
+<%= link_to "Masuk", new_member_session_path, :method => :get, :class => 'btn btn-primary' %>
+<%= link_to "Daftar", new_member_registration_path, :method => :get, :class => 'btn btn-primary' %>
+</div>
+
+<% end %>

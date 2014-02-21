@@ -1,0 +1,29 @@
+.page-header
+  %h2
+    Welcome to The Lounge
+
+= link_to 'New The Lounge', new_list_path, :class => "btn btn-success"
+%br
+#articel
+  - @lists.each do |list|
+    %br
+    .isi
+      %h1= list.title
+      %span.text= list.body
+      %br
+      %br
+      %span.text= link_to "Download", list.attachment_url
+      %br
+      %br
+      %span.link= link_to 'Show |'
+      %span.link= link_to 'Edit |'
+      %span.link= link_to 'Delete |', list_path(list), method: :delete, data: {confirm: 'Are You sure?'}
+      %br
+  %ul.pager
+    %li
+      %a{href: "#"} Previous
+    %li
+      %a{href: "#"} Next
+
+
+
